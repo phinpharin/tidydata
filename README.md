@@ -1,8 +1,7 @@
-tidydata
-========
 
-for cours project in getting and cleaning data in R
+[            HOW TO GET AND CLEAN DATA IN R]()
 
+I go to folder "UCI fHAR Dataset" and do ...every thing.
 [step 1]()
 
 ##Merges the training and the test sets to create one data set##
