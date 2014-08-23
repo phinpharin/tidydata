@@ -13,7 +13,7 @@ I go to folder "UCI fHAR Dataset" and do ...every thing.
 > test.X<-read.table("test/X_test.txt")
 
 > test.Y<-read.table("test/y_test.txt")
-
+ 
 > test.S<-read.table("test/subject_test.txt")
 
 **read training**
@@ -48,7 +48,7 @@ see code
 [step 4]()
 
 ##Appropriately labels the data set with descriptive variable names.##
- **for me I do  step 3 and 4 at once.**
+ **for me I do  step 2 and 4 at once.**
  see code
  
  

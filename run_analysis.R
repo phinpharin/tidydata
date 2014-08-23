@@ -1,6 +1,6 @@
+## I do every thing in "UCI HAR Dataset" folder
 
-
-##step 1
+##step 1 Merges the training and the test sets to create one data set.
 #########################################
     ##read test
 test.X<-read.table("test/X_test.txt")
@@ -17,7 +17,7 @@ data.1 <- rbind(cbind(test.S, test.Y, test.X),
               cbind(training.S, training.Y, training.X))
 
 
-##step 2
+##step 2 Extracts only the measurements on the mean and standard deviation for each measurement.
 #####################################
     ##read the features
 features <- read.table("features.txt", strip.white=TRUE, stringsAsFactors=FALSE)
@@ -27,7 +27,7 @@ names(data.1)<-c("subject","activity",features.names)
 ### only  features wih mean and sd
 features.mean.sd <- features[grep("mean\\(\\)|std\\(\\)", features$V2), ]
 
-##add names to all colun
+##add names to all column
 features.mean.sd.names<-features.mean.sd$V2
 data.mean.sd<-data.1[,c("subject","activity",features.mean.sd.names)]
 
@@ -42,7 +42,11 @@ data.mean.sd$activity <- activity[data.mean.sd$activity, 2]
 #####################################
 
 
- ## oh yes, pardon  I have done it in step 2 and 3
+ ## oh yes, pardon  I have done it in step 2 
+##features.names<-features$V2
+##names(data.1)<-c("subject","activity",features.names) 
+##features.mean.sd.names<-features.mean.sd$V2
+##data.mean.sd<-data.1[,c("subject","activity",features.mean.sd.names)]
 
 
 ##step 5
